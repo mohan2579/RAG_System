@@ -1,0 +1,164 @@
+Title: Data Structures - Arrays, Stacks, and Queues
+
+Introduction:
+Data structures are fundamental concepts in computer science that allow us to organize, store, and manipulate data efficiently. Among the most basic and widely used data structures are arrays, stacks, and queues. Each has its own characteristics, advantages, and use cases.
+
+---
+
+Section 1: Arrays
+
+An array is a collection of elements stored at contiguous memory locations. It allows fast access to elements using an index. Arrays are one of the simplest data structures and serve as the foundation for many other structures.
+
+Key Characteristics:
+- Elements are stored in contiguous memory.
+- Indexing starts from 0 in most programming languages.
+- Provides O(1) time complexity for accessing elements.
+- Fixed size in most static implementations.
+
+Example:
+Consider an array of integers:
+[10, 20, 30, 40, 50]
+
+Here:
+Index 0 -> 10
+Index 1 -> 20
+Index 2 -> 30
+Index 3 -> 40
+Index 4 -> 50
+
+Operations:
+1. Access: Retrieve element using index.
+2. Insertion: Add element at a specific position (may require shifting).
+3. Deletion: Remove element (also requires shifting).
+4. Traversal: Loop through all elements.
+
+Advantages:
+- Fast access using index.
+- Simple to implement.
+
+Disadvantages:
+- Fixed size (in static arrays).
+- Insertion and deletion can be costly.
+
+---
+
+Section 2: Stacks
+
+A stack is a linear data structure that follows the Last In First Out (LIFO) principle. This means the last element added is the first one to be removed.
+
+Think of a stack like a pile of plates:
+- You add a plate on top.
+- You remove a plate from the top.
+
+Basic Operations:
+1. Push: Add an element to the top.
+2. Pop: Remove the top element.
+3. Peek/Top: View the top element without removing it.
+4. isEmpty: Check if the stack is empty.
+
+Example:
+Start with an empty stack:
+Push 10 -> [10]
+Push 20 -> [10, 20]
+Push 30 -> [10, 20, 30]
+
+Pop -> removes 30 -> [10, 20]
+
+Applications:
+- Expression evaluation (infix to postfix)
+- Undo/Redo operations
+- Function call management (call stack)
+
+Advantages:
+- Simple and efficient for LIFO operations.
+- Useful in recursion and backtracking.
+
+Disadvantages:
+- Limited access (only top element accessible).
+- Not suitable for random access.
+
+---
+
+Section 3: Queues
+
+A queue is a linear data structure that follows the First In First Out (FIFO) principle. This means the first element added is the first one to be removed.
+
+Think of a queue like a line of people:
+- The first person in line gets served first.
+
+Basic Operations:
+1. Enqueue: Add element at the rear.
+2. Dequeue: Remove element from the front.
+3. Front/Peek: View the front element.
+4. isEmpty: Check if queue is empty.
+
+Example:
+Start with empty queue:
+Enqueue 10 -> [10]
+Enqueue 20 -> [10, 20]
+Enqueue 30 -> [10, 20, 30]
+
+Dequeue -> removes 10 -> [20, 30]
+
+Types of Queues:
+- Simple Queue
+- Circular Queue
+- Priority Queue
+- Double Ended Queue (Deque)
+
+Applications:
+- CPU scheduling
+- Print queue systems
+- Breadth First Search (BFS)
+
+Advantages:
+- Maintains order of processing.
+- Efficient for FIFO operations.
+
+Disadvantages:
+- Limited access (only front and rear).
+- Can be inefficient if not implemented properly.
+
+---
+
+Section 4: Comparison
+
+Array vs Stack vs Queue:
+
+Array:
+- Access: Random
+- Order: Fixed index-based
+- Operations: Fast access, slower insert/delete
+
+Stack:
+- Access: Only top
+- Order: LIFO
+- Operations: Push and Pop
+
+Queue:
+- Access: Front and Rear
+- Order: FIFO
+- Operations: Enqueue and Dequeue
+
+---
+
+Section 5: Real-World Analogy
+
+Array:
+Like a row of lockers where each locker has a number.
+
+Stack:
+Like a stack of books where you pick from the top.
+
+Queue:
+Like a ticket counter line where first person gets served first.
+
+---
+
+Conclusion:
+
+Arrays, stacks, and queues are fundamental building blocks in computer science. Arrays provide fast access and are widely used for storing data. Stacks are ideal for situations where the last inserted element needs to be processed first, such as undo operations. Queues are useful when order must be preserved, such as scheduling and buffering tasks.
+
+Understanding these data structures is essential for building efficient algorithms and systems.
+
+End of File.
