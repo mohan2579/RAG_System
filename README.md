@@ -172,7 +172,7 @@ What is cosine similarity?
 
 ## 🧑‍💻 Author
 
-Your Name
+MOHAN REDDY
 
 ---
 
